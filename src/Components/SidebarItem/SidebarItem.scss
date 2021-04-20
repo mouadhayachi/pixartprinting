@@ -1,0 +1,60 @@
+.SidebarItemComponent {
+  &-sidebarContainer {
+    background: #f2f2f7;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    justify-content: space-between;
+    width: 15vw;
+
+    &-sidebarDisplay {
+      display: flex;
+      align-items: center;
+
+      &-containerItem {
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 100px;
+        margin: auto;
+        padding: auto;
+        padding-top: 12px;
+        padding-left: 10px;
+        overflow: hidden;
+
+        &-jobTitleStyle {
+          font-weight: bold;
+        }
+      }
+    }
+
+    &-menuExpand {
+      display: none;
+    }
+
+    @media screen and (max-width: 480px) {
+       &-menuExpand {
+        display: block;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &-sidebarContainer {
+      width: 150px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    &-sidebarContainer {
+      width: 65vw;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    &-menuExpand {
+      display: block;
+    }
+  }
+}

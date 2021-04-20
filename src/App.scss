@@ -1,0 +1,22 @@
+$azure-color:#0C5081;
+
+.MainApp {
+  &-mainPage {
+    padding-top: 40px;
+    margin-left: 100px;
+    color:$azure-color;
+  }
+
+  @media screen and (max-width: 1024px) {
+    &-mainPage {
+      margin-left: 20px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    &-mainPage {
+      padding: 5px;
+      margin-top: 20px;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.SidebarPage {
+  &-sidebarContainer {
+    display: flex;
+
+    &-sidebar {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      &-sidebarDisplay {
+        display: flex;
+      }
+
+      &-sidebarDisplayDesktop {
+        display: block;
+      }
+
+      &-sidebarDisplayMobile {
+        display: none;
+      }
+
+      @media screen and (max-width: 700px) {
+        &-sidebar {
+          width: 100%;
+          height: auto;
+          position: relative;
+        }
+        &-sidebar span {
+          float: left;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        &-sidebar span {
+          text-align: center;
+          float: none;
+          margin: 5px;
+        }
+
+        &-sidebarDisplay {
+          display: flex;
+          flex-direction: column;
+        }
+
+        &-sidebarDisplayMobile {
+          display: block;
+          width:85vw;
+        }
+
+        &-sidebarDisplayDesktop {
+          display: none;
+        }
+      }
+    }
+  }
+}
